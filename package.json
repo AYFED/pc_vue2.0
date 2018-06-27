@@ -1,6 +1,6 @@
 {
-  "name": "pc_vue2.0",
-  "version": "0.1.0",
+  "name": "pc_vue2.5",
+  "version": "2.5.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -9,6 +9,14 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "async-validator": "^1.8.2",
+    "deepmerge": "^2.1.0",
+    "element-resize-detector": "^1.1.14",
+    "js-calendar": "^1.2.3",
+    "lodash.throttle": "^4.1.1",
+    "popper.js": "^1.14.1",
+    "tinycolor2": "^1.4.1",
+    "v-click-outside-x": "^3.0.0",
     "vue": "^2.5.16",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
