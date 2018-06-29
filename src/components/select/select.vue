@@ -80,7 +80,7 @@
     import SelectHead from './select-head.vue';
     import FunctionalOptions from './functional-options.vue';
 
-    const prefixCls = 'ivu-select';
+    const prefixCls = 'ay-select';
     const optionRegexp = /^i-option$|^Option$/i;
     const optionGroupRegexp = /option-?group/i;
 

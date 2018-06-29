@@ -21,7 +21,7 @@
     import Options from '../time-mixins';
     import { deepCopy, scrollTop, firstUpperCase } from '../../../utils/assist';
 
-    const prefixCls = 'ivu-time-picker-cells';
+    const prefixCls = 'ay-time-picker-cells';
     const timeParts = ['hours', 'minutes', 'seconds'];
 
     export default {

@@ -71,7 +71,7 @@
     import Options from './options.vue';
     import Locale from '../../mixins/locale';
 
-    const prefixCls = 'ivu-page';
+    const prefixCls = 'ay-page';
 
     export default {
         name: 'Page',

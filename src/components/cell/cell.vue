@@ -28,7 +28,7 @@
     import Icon from '../icon/icon.vue';
     import mixinsLink from '../../mixins/link';
 
-    const prefixCls = 'ivu-cell';
+    const prefixCls = 'ay-cell';
 
     export default {
         name: 'Cell',

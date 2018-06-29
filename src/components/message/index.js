@@ -1,6 +1,6 @@
 import Notification from '../base/notification';
 
-const prefixCls = 'ivu-message';
+const prefixCls = 'ay-message';
 const iconPrefixCls = 'ivu-icon';
 const prefixKey = 'ivu_message_key_';
 

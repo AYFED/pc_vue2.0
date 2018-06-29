@@ -14,7 +14,7 @@
 </template>
 <script>
     import { oneOf } from '../../utils/assist';
-    const prefixCls = 'ivu-badge';
+    const prefixCls = 'ay-badge';
 
     export default {
         name: 'Badge',

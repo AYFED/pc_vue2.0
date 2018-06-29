@@ -8,7 +8,7 @@
     import mixin from './mixin';
     import mixinsLink from '../../mixins/link';
 
-    const prefixCls = 'ivu-menu';
+    const prefixCls = 'ay-menu';
 
     export default {
         name: 'MenuItem',

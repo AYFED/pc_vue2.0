@@ -54,7 +54,7 @@
     import { oneOf } from '../../utils/assist';
     import Locale from '../../mixins/locale';
 
-    const prefixCls = 'ivu-poptip';
+    const prefixCls = 'ay-poptip';
 
     export default {
         name: 'Poptip',

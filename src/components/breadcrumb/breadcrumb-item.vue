@@ -14,7 +14,7 @@
 </template>
 <script>
     import mixinsLink from '../../mixins/link';
-    const prefixCls = 'ivu-breadcrumb-item';
+    const prefixCls = 'ay-breadcrumb-item';
 
     export default {
         name: 'BreadcrumbItem',

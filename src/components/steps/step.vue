@@ -19,7 +19,7 @@
     import Emitter from '../../mixins/emitter';
     import { oneOf } from '../../utils/assist';
 
-    const prefixCls = 'ivu-steps';
+    const prefixCls = 'ay-steps';
     const iconPrefixCls = 'ivu-icon';
 
     export default {

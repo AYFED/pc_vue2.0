@@ -7,7 +7,7 @@
     import { oneOf } from '../../utils/assist';
     import Time from './time';
 
-    const prefixCls = 'ivu-time';
+    const prefixCls = 'ay-time';
 
     export default {
         name: 'Time',

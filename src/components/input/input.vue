@@ -64,7 +64,7 @@
     import calcTextareaHeight from '../../utils/calcTextareaHeight';
     import Emitter from '../../mixins/emitter';
 
-    const prefixCls = 'ivu-input';
+    const prefixCls = 'ay-input';
 
     export default {
         name: 'Input',

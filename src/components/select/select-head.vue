@@ -34,7 +34,7 @@
     import Emitter from '../../mixins/emitter';
     import Locale from '../../mixins/locale';
 
-    const prefixCls = 'ivu-select';
+    const prefixCls = 'ay-select';
 
     export default {
         name: 'iSelectHead',

@@ -32,7 +32,7 @@
 
     import Icon from '../icon/icon.vue';
 
-    const prefixCls = 'ivu-rate';
+    const prefixCls = 'ay-rate';
 
     export default {
         name: 'Rate',

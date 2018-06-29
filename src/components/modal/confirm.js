@@ -3,7 +3,7 @@ import Modal from './modal.vue';
 import Button from '../button/button.vue';
 import Locale from '../../mixins/locale';
 
-const prefixCls = 'ivu-modal-confirm';
+const prefixCls = 'ay-modal-confirm';
 
 Modal.newInstance = properties => {
     const _props = properties || {};

@@ -105,7 +105,7 @@
     import elementResizeDetectorMaker from 'element-resize-detector';
     import { getAllColumns, convertToRows, convertColumnOrder, getRandomStr } from './util';
 
-    const prefixCls = 'ivu-table';
+    const prefixCls = 'ay-table';
 
     let rowKey = 1;
     let columnKey = 1;

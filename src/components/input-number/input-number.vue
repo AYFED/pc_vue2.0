@@ -39,7 +39,7 @@
     import { oneOf } from '../../utils/assist';
     import Emitter from '../../mixins/emitter';
 
-    const prefixCls = 'ivu-input-number';
+    const prefixCls = 'ay-input-number';
     const iconPrefixCls = 'ivu-icon';
 
     function addNum (num1, num2) {

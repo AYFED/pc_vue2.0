@@ -3,7 +3,7 @@
         :class="wrapClasses" 
         :style="wrapStyles">
         <span v-show="showZeroTrigger" @click="toggleCollapse" :class="zeroWidthTriggerClasses">
-            <i class="ivu-icon ivu-icon-navicon-round"></i>
+            <i class="ay-icon ay-icon-navicon-round"></i>
         </span>
         <div :class="childClasses">
             <slot></slot>
@@ -18,7 +18,7 @@
 <script>
     import { on, off } from '../../utils/dom';
     import { oneOf, dimensionMap, setMatchMedia } from '../../utils/assist';
-    const prefixCls = 'ivu-layout-sider';
+    const prefixCls = 'ay-layout-sider';
     setMatchMedia();
     export default {
         name: 'Sider',
@@ -97,8 +97,8 @@
             },
             triggerIconClasses () {
                 return [
-                    'ivu-icon',
-                    `ivu-icon-chevron-${this.reverseArrow ? 'right' : 'left'}`,
+                    'ay-icon',
+                    `ay-icon-chevron-${this.reverseArrow ? 'right' : 'left'}`,
                     `${prefixCls}-trigger-icon`,
                 ];
             },

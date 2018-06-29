@@ -34,7 +34,7 @@
     import Emitter from '../../mixins/emitter';
     import ScrollbarMixins from './mixins-scrollbar';
 
-    const prefixCls = 'ivu-modal';
+    const prefixCls = 'ay-modal';
 
     export default {
         name: 'Modal',

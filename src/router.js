@@ -9,7 +9,11 @@ export default new Router({
   routes: [
     {
       path: '/grid',
-      component: (resolve) => require(['./views/grid.vue'], resolve)
+      component: (resolve) => require(['./views/Grid'], resolve)
+    },
+    {
+      path: '/layout',
+      component: (resolve) => require(['./views/Layout'], resolve)
     },
   ]
 })

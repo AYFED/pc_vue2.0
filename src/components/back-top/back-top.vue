@@ -10,7 +10,7 @@
 <script>
     import { scrollTop } from '../../utils/assist';
     import { on, off } from '../../utils/dom';
-    const prefixCls = 'ivu-back-top';
+    const prefixCls = 'ay-back-top';
 
     export default {
         props: {

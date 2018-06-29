@@ -7,7 +7,7 @@
     </li>
 </template>
 <script>
-    const prefixCls = 'ivu-select-group';
+    const prefixCls = 'ay-select-group';
 
     export default {
         name: 'OptionGroup',

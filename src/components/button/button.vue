@@ -26,7 +26,7 @@
     import { oneOf } from '../../utils/assist';
     import mixinsLink from '../../mixins/link';
 
-    const prefixCls = 'ivu-btn';
+    const prefixCls = 'ay-btn';
 
     export default {
         name: 'Button',

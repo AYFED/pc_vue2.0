@@ -11,7 +11,7 @@
     import Emitter from '../../mixins/emitter';
     import { findComponentUpward } from '../../utils/assist';
 
-    const prefixCls = 'ivu-select-item';
+    const prefixCls = 'ay-select-item';
 
     export default {
         name: 'iOption',

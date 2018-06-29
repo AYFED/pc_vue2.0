@@ -85,7 +85,7 @@
     import {findComponentsDownward} from '../../utils/assist';
     import Emitter from '../../mixins/emitter';
 
-    const prefixCls = 'ivu-date-picker';
+    const prefixCls = 'ay-date-picker';
     const pickerPrefixCls = 'ivu-picker';
 
     const isEmptyArray = val => val.reduce((isEmpty, str) => isEmpty && !str || (typeof str === 'string' && str.trim() === ''), true);

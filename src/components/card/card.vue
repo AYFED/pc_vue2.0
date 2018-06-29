@@ -11,7 +11,7 @@
     </div>
 </template>
 <script>
-    const prefixCls = 'ivu-card';
+    const prefixCls = 'ay-card';
     const defaultPadding = 16;
     import Icon from '../icon/icon.vue';
 
