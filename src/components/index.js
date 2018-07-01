@@ -10,6 +10,7 @@ import Icon from './icon'
 import Breadcrumb from './breadcrumb';
 import BreadcrumbItem from './breadcrumb-item';
 import Card from './card';
+import Submenu from './submenu';
 
 
 export {
@@ -26,4 +27,5 @@ export {
   Breadcrumb,
   BreadcrumbItem,
   Card,
+  Submenu,
 }
