@@ -191,18 +191,18 @@
 
 <script>
   import {
-    Content,
-    Footer,
-    Header,
-    Layout,
-    Sider,
-    Menu,
-    MenuItem,
-    Icon,
     Breadcrumb,
     BreadcrumbItem,
     Card,
-    Submenu
+    Content,
+    Footer,
+    Header,
+    Icon,
+    Layout,
+    Menu,
+    MenuItem,
+    Sider,
+    Submenu,
   } from '@/components'
 
   export default {
@@ -218,36 +218,47 @@
       Breadcrumb,
       BreadcrumbItem,
       Card,
-      Submenu
+      Submenu,
     },
-    data() {
+    data () {
       return {
-        isCollapsed: false
-      };
+        isCollapsed: false,
+      }
     },
     computed: {
-      rotateIcon() {
+      rotateIcon () {
         return [
           'menu-icon',
-          this.isCollapsed ? 'rotate-icon' : ''
-        ];
+          this.isCollapsed ? 'rotate-icon' : '',
+        ]
       },
       menuitemClasses: function () {
         return [
           'menu-item',
-          this.isCollapsed ? 'collapsed-menu' : ''
+          this.isCollapsed ? 'collapsed-menu' : '',
         ]
-      }
+      },
     },
     methods: {
-      collapsedSider() {
-        this.$refs.side1.toggleCollapse();
-      }
-    }
+      collapsedSider () {
+        this.$refs.side1.toggleCollapse()
+      },
+    },
   }
 </script>
 
+
 <style lang="less">
+    @css-prefix: ay-;
+
+    .@{css-prefix}demo3-layout {
+        .@{css-prefix}layout-sider-trigger {
+            position: absolute;
+        }
+    }
+</style>
+
+<style lang="less" scoped>
     @css-prefix: ay-;
 
     .@{css-prefix}demo-layout {
@@ -515,7 +526,7 @@
             top: 15px;
             left: 20px;
         }
-        .@{css-prefix}layout-header{
+        .@{css-prefix}layout-header {
             background: #fff;
         }
         .layout-nav {
@@ -527,5 +538,4 @@
             text-align: center;
         }
     }
-
 </style>

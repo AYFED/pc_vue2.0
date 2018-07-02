@@ -145,7 +145,7 @@
   }
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
     @css-prefix: ay-;
 
     .view {
