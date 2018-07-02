@@ -7,13 +7,13 @@
                         div.layout-logo
                 Layout(:style="{padding: '0 50px'}")
                     Sider(hide-trigger, :style="{background: '#fff'}")
-                        Menu(active-name="1-3", theme="light", width="auto", :open-names="['1']")
+                        Menu(active-name="1-1", theme="light", width="auto", :open-names="['1']")
                             Submenu(name="1")
                                 template(slot="title")
                                     Icon(type="ios-navigate")
-                                    | Item 1
-                                MenuItem(name="1-1") Option 1
-                                MenuItem(name="1-2") Option 2
+                                    | Basic
+                                MenuItem(name="1-1") Grid
+                                MenuItem(name="1-2") Layout
                                 MenuItem(name="1-3") Option 3
                             Submenu(name="2")
                                 template(slot="title")
