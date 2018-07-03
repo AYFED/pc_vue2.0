@@ -3,9 +3,9 @@
         <slot></slot>
         <sup :class="dotClasses" :style="styles" v-show="badge"></sup>
     </span>
-    <span v-else-if="status" :class="classes" class="ivu-badge-status" ref="badge">
+    <span v-else-if="status" :class="classes" class="ay-badge-status" ref="badge">
         <span :class="statusClasses"></span>
-        <span class="ivu-badge-status-text">{{ text }}</span>
+        <span class="ay-badge-status-text">{{ text }}</span>
     </span>
     <span v-else :class="classes" ref="badge">
         <slot></slot>

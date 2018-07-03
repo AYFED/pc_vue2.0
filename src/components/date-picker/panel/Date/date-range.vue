@@ -130,7 +130,7 @@
     import Locale from '../../../../mixins/locale';
 
     const prefixCls = 'ay-picker-panel';
-    const datePrefixCls = 'ivu-date-picker';
+    const datePrefixCls = 'ay-date-picker';
 
     const dateSorter = (a, b) => {
         if (!a || !b) return 0;

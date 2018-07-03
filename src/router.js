@@ -9,11 +9,19 @@ export default new Router({
   routes: [
     {
       path: '/grid',
-      component: (resolve) => require(['./views/Grid'], resolve)
+      component: (resolve) => require(['./views/Grid'], resolve),
     },
     {
       path: '/layout',
-      component: (resolve) => require(['./views/Layout'], resolve)
+      component: (resolve) => require(['./views/Layout'], resolve),
     },
-  ]
+    {
+      path: '/button',
+      component: (resolve) => require(['./views/Button'], resolve),
+    },
+    {
+      path: '/icon',
+      component: (resolve) => require(['./views/Icon'], resolve),
+    },
+  ],
 })

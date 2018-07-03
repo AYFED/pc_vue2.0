@@ -64,7 +64,7 @@
     import Locale from '../../mixins/locale';
 
     const prefixCls = 'ay-cascader';
-    const selectPrefixCls = 'ivu-select';
+    const selectPrefixCls = 'ay-select';
 
     export default {
         name: 'Cascader',

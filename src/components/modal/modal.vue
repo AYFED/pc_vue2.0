@@ -163,7 +163,7 @@
                 }
             },
             handleWrapClick (event) {
-                // use indexOf,do not use === ,because ivu-modal-wrap can have other custom className
+                // use indexOf,do not use === ,because ay-modal-wrap can have other custom className
                 const className = event.target.getAttribute('class');
                 if (className && className.indexOf(`${prefixCls}-wrap`) > -1) this.mask();
             },

@@ -90,7 +90,7 @@
     import { siblingMonth, formatDateLabels } from '../../util';
 
     const prefixCls = 'ay-picker-panel';
-    const datePrefixCls = 'ivu-date-picker';
+    const datePrefixCls = 'ay-date-picker';
 
     export default {
         name: 'DatePickerPanel',

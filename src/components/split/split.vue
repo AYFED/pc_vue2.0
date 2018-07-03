@@ -58,7 +58,7 @@ export default {
    */
     data () {
         return {
-            prefix: 'ivu-split',
+            prefix: 'ay-split',
             offset: 0,
             oldOffset: 0,
             isMoving: false

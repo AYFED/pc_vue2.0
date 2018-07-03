@@ -1,6 +1,6 @@
 <template>
     <div :class="classes">
-        <a v-if="to" :href="linkUrl" class="ivu-cell-link" @click.prevent="handleClick" @click="handleClickItem">
+        <a v-if="to" :href="linkUrl" class="ay-cell-link" @click.prevent="handleClick" @click="handleClickItem">
             <CellItem :title="title" :label="label" :extra="extra">
                 <slot name="icon" slot="icon"></slot>
                 <slot slot="default"></slot>
@@ -8,7 +8,7 @@
                 <slot name="label" slot="label"></slot>
             </CellItem>
         </a>
-        <div class="ivu-cell-link" v-else @click="handleClickItem">
+        <div class="ay-cell-link" v-else @click="handleClickItem">
             <CellItem :title="title" :label="label" :extra="extra">
                 <slot name="icon" slot="icon"></slot>
                 <slot slot="default"></slot>
@@ -16,7 +16,7 @@
                 <slot name="label" slot="label"></slot>
             </CellItem>
         </div>
-        <div class="ivu-cell-arrow" v-if="to">
+        <div class="ay-cell-arrow" v-if="to">
             <slot name="arrow">
                 <Icon type="ios-arrow-right"></Icon>
             </slot>

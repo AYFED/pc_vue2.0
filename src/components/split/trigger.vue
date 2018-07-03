@@ -14,7 +14,7 @@ export default {
     },
     data () {
         return {
-            prefix: 'ivu-split-trigger',
+            prefix: 'ay-split-trigger',
             initOffset: 0
         };
     },

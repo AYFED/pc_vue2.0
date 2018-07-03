@@ -40,7 +40,7 @@
     import Emitter from '../../mixins/emitter';
 
     const prefixCls = 'ay-input-number';
-    const iconPrefixCls = 'ivu-icon';
+    const iconPrefixCls = 'ay-icon';
 
     function addNum (num1, num2) {
         let sq1, sq2, m;

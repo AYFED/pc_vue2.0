@@ -99,9 +99,9 @@
             },
             iconClasses () {
                 return [
-                    'ivu-icon',
+                    'ay-icon',
                     {
-                        [`ivu-icon-${this.icon}`]: this.icon !== '',
+                        [`ay-icon-${this.icon}`]: this.icon !== '',
                         [`${this.customIcon}`]: this.customIcon !== '',
                     }
                 ];

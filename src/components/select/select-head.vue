@@ -1,7 +1,7 @@
 <template>
     <div @click="onHeaderClick">
-        <div class="ivu-tag ivu-tag-checked" v-for="item in selectedMultiple">
-            <span class="ivu-tag-text">{{ item.label }}</span>
+        <div class="ay-tag ay-tag-checked" v-for="item in selectedMultiple">
+            <span class="ay-tag-text">{{ item.label }}</span>
             <Icon type="ios-close" @click.native.stop="removeTag(item)"></Icon>
         </div>
         <span

@@ -11,6 +11,8 @@ import Breadcrumb from './breadcrumb';
 import BreadcrumbItem from './breadcrumb-item';
 import Card from './card';
 import Submenu from './submenu';
+import XButton from './button';
+import ButtonGroup from './button-group';
 
 
 export {
@@ -28,4 +30,6 @@ export {
   BreadcrumbItem,
   Card,
   Submenu,
+  XButton,
+  ButtonGroup
 }

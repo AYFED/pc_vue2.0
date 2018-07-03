@@ -7,14 +7,15 @@
                         div.layout-logo
                 Layout(:style="{padding: '0 50px'}")
                     Sider(hide-trigger, :style="{background: '#fff'}")
-                        Menu(active-name="1-1", theme="light", width="auto", :open-names="['1']")
+                        Menu(active-name="", theme="light", width="auto", :open-names="['1']",@on-select="changeMenu")
                             Submenu(name="1")
                                 template(slot="title")
                                     Icon(type="ios-navigate")
                                     | Basic
                                 MenuItem(name="1-1") Grid
                                 MenuItem(name="1-2") Layout
-                                MenuItem(name="1-3") Option 3
+                                MenuItem(name="1-3") Button
+                                MenuItem(name="1-4") Icon
                             Submenu(name="2")
                                 template(slot="title")
                                     Icon(type="ios-keypad")
@@ -34,21 +35,22 @@
 
 <script>
   import {
-    Content,
-    Footer,
-    Header,
-    Layout,
-    Sider,
-    Menu,
-    MenuItem,
-    Icon,
     Breadcrumb,
     BreadcrumbItem,
     Card,
-    Submenu
+    Content,
+    Footer,
+    Header,
+    Icon,
+    Layout,
+    Menu,
+    MenuItem,
+    Sider,
+    Submenu,
   } from '@/components'
 
   export default {
+    name: 'App',
     components: {
       Layout,
       Header,
@@ -61,7 +63,25 @@
       Breadcrumb,
       BreadcrumbItem,
       Card,
-      Submenu
+      Submenu,
+    },
+    methods: {
+      changeMenu (active) {
+        switch (active) {
+          case '1-1':
+            this.$router.push({ path: 'grid' })
+            break
+          case '1-2':
+            this.$router.push({ path: 'layout' })
+            break
+          case '1-3':
+            this.$router.push({ path: 'button' })
+            break
+          case '1-4':
+            this.$router.push({ path: 'icon' })
+            break
+        }
+      },
     },
   }
 </script>
@@ -83,7 +103,7 @@
             background: #fff;
         }
 
-        .@{css-prefix}layout,.@{css-prefix}layout-footer{
+        .@{css-prefix}layout, .@{css-prefix}layout-footer {
             background: #fff;
         }
 

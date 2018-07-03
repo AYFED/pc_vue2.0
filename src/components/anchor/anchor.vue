@@ -17,7 +17,7 @@ export default {
     name: 'Anchor',
     data () {
         return {
-            prefix: 'ivu-anchor',
+            prefix: 'ay-anchor',
             isAffixed: false, // current affixed state
             inkTop: 0,
             linkHeight: 0,

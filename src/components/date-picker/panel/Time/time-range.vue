@@ -58,7 +58,7 @@
     import { initTimeDate, formatDateLabels } from '../../util';
 
     const prefixCls = 'ay-picker-panel';
-    const timePrefixCls = 'ivu-time-picker';
+    const timePrefixCls = 'ay-time-picker';
 
     const capitalize = (str) => str[0].toUpperCase() + str.slice(1);
 

@@ -26,7 +26,7 @@
         methods: {
             queryChange () {
                 this.$nextTick(() => {
-                    const options = this.$refs.options.querySelectorAll('.ivu-select-item');
+                    const options = this.$refs.options.querySelectorAll('.ay-select-item');
                     let hasVisibleOption = false;
                     for (let i = 0; i < options.length; i++) {
                         if (options[i].style.display !== 'none') {

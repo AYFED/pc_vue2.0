@@ -20,7 +20,7 @@
     import { oneOf } from '../../utils/assist';
 
     const prefixCls = 'ay-steps';
-    const iconPrefixCls = 'ivu-icon';
+    const iconPrefixCls = 'ay-icon';
 
     export default {
         name: 'Step',

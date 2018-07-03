@@ -14,7 +14,7 @@ export default {
     },
     data () {
         return {
-            prefix: 'ivu-anchor-link'
+            prefix: 'ay-anchor-link'
         };
     },
     computed: {

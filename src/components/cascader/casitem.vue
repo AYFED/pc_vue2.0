@@ -1,8 +1,8 @@
 <template>
     <li :class="classes">
         {{ data.label }}
-        <i v-if="showArrow" class="ivu-icon ivu-icon-ios-arrow-forward"></i>
-        <i v-if="showLoading" class="ivu-icon ivu-icon-ios-sync ivu-load-loop"></i>
+        <i v-if="showArrow" class="ay-icon ay-icon-ios-arrow-forward"></i>
+        <i v-if="showLoading" class="ay-icon ay-icon-ios-sync ay-load-loop"></i>
     </li>
 </template>
 <script>

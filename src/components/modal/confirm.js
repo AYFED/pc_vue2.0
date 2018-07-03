@@ -130,8 +130,8 @@ Modal.newInstance = properties => {
             },
             iconNameCls () {
                 return [
-                    'ivu-icon',
-                    `ivu-icon-${this.iconName}`
+                    'ay-icon',
+                    `ay-icon-${this.iconName}`
                 ];
             },
             localeOkText () {

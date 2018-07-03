@@ -27,7 +27,7 @@ Spin.newInstance = properties => {
                 });
             }
             return h('div', {
-                'class': 'ivu-spin-fullscreen ivu-spin-fullscreen-wrapper'
+                'class': 'ay-spin-fullscreen ay-spin-fullscreen-wrapper'
             }, [vnode]);
         }
     });
@@ -44,8 +44,8 @@ Spin.newInstance = properties => {
             spin.visible = false;
             setTimeout(function() {
                 spin.$parent.$destroy();
-                if (document.getElementsByClassName('ivu-spin-fullscreen')[0] !== undefined) {
-                    document.body.removeChild(document.getElementsByClassName('ivu-spin-fullscreen')[0]);
+                if (document.getElementsByClassName('ay-spin-fullscreen')[0] !== undefined) {
+                    document.body.removeChild(document.getElementsByClassName('ay-spin-fullscreen')[0]);
                 }
                 cb();
             }, 500);

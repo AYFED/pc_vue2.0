@@ -269,7 +269,7 @@
                 return {
                     [prefixCls + '-dropdown-transfer']: this.transfer,
                     [prefixCls + '-multiple']: this.multiple && this.transfer,
-                    ['ivu-auto-complete']: this.autoComplete,
+                    ['ay-auto-complete']: this.autoComplete,
                 };
             },
             selectionCls () {
