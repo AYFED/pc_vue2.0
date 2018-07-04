@@ -13,6 +13,9 @@ import Card from './card';
 import Submenu from './submenu';
 import XButton from './button';
 import ButtonGroup from './button-group';
+import Input from './input';
+import XSelect from './select';
+import XOption from './select';
 
 
 export {
@@ -31,5 +34,8 @@ export {
   Card,
   Submenu,
   XButton,
-  ButtonGroup
+  ButtonGroup,
+  Input,
+  XSelect,
+  XOption
 }

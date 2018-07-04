@@ -19,8 +19,8 @@
                             Submenu(name="2")
                                 template(slot="title")
                                     Icon(type="ios-keypad")
-                                    | Item 2
-                                MenuItem(name="2-1") Option 1
+                                    | From
+                                MenuItem(name="2-1") Input
                                 MenuItem(name="2-2") Option 2
                             Submenu(name="3")
                                 template(slot="title")
@@ -79,6 +79,9 @@
             break
           case '1-4':
             this.$router.push({ path: 'icon' })
+            break
+          case '2-1':
+            this.$router.push({ path: 'input' })
             break
         }
       },

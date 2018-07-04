@@ -23,5 +23,9 @@ export default new Router({
       path: '/icon',
       component: (resolve) => require(['./views/Icon'], resolve),
     },
+    {
+      path: '/input',
+      component: (resolve) => require(['./views/Input'], resolve),
+    },
   ],
 })

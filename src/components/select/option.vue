@@ -14,7 +14,7 @@
     const prefixCls = 'ay-select-item';
 
     export default {
-        name: 'iOption',
+        name: 'XOption',
         componentName: 'select-item',
         mixins: [ Emitter ],
         props: {

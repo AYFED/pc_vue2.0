@@ -138,7 +138,7 @@
     const ANIMATION_TIMEOUT = 300;
 
     export default {
-        name: 'iSelect',
+        name: 'XSelect',
         mixins: [ Emitter, Locale ],
         components: { FunctionalOptions, Drop, SelectHead },
         directives: { clickOutside, TransferDom },
