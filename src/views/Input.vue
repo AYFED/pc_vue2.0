@@ -34,12 +34,12 @@
         br
         br
         h2 复合型输入框
-        Input(v-model="value11")
+        Input(v-model="value11", style="width: 400px;")
             span(slot="prepend") http://
             span(slot="append") .com
         br
         br
-        Input(v-model="value12")
+        Input(v-model="value12", style="width: 400px;")
             XSelect(v-model="select1", slot="prepend", style="width: 80px")
                 XOption(value="http") http://
                 XOption(value="https") https://
@@ -47,17 +47,26 @@
                 XOption(value="com") .com
                 XOption(value="org") .org
                 XOption(value="io") .io
+        br
+        br
+        Input(v-model="value13", style="width: 400px;")
+            XSelect(v-model="select3", slot="prepend", style="width: 80px")
+                XOption(value="day") Day
+                XOption(value="month") Month
+            XButton(slot="append", icon="ios-search")
+
 </template>
 
 <script>
 
-  import { Input, XSelect, XOption } from '@/components'
+  import { Input, XOption, XSelect, XButton } from '@/components'
 
   export default {
     components: {
       Input,
       XSelect,
-      XOption
+      XOption,
+      XButton
     },
     data () {
       return {
@@ -75,10 +84,10 @@
         value11: '',
         value12: '',
         value13: '',
-        select1: 'http',
-        select2: 'com',
+        select1: '',
+        select2: '',
         select3: 'day',
-        value14: 'Hello World',
+        value14: '',
       }
     },
   }

@@ -15,7 +15,7 @@ import XButton from './button';
 import ButtonGroup from './button-group';
 import Input from './input';
 import XSelect from './select';
-import XOption from './select';
+import XOption from './option';
 
 
 export {
