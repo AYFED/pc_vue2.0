@@ -12,16 +12,22 @@
                                 template(slot="title")
                                     Icon(type="ios-navigate")
                                     | Basic
-                                MenuItem(name="1-1") Grid
-                                MenuItem(name="1-2") Layout
-                                MenuItem(name="1-3") Button
-                                MenuItem(name="1-4") Icon
+                                MenuItem(name="1-1") Grid 栅格
+                                MenuItem(name="1-2") Layout 布局
+                                MenuItem(name="1-3") Button 按钮
+                                MenuItem(name="1-4") Icon 图标
                             Submenu(name="2")
                                 template(slot="title")
                                     Icon(type="ios-keypad")
                                     | From
-                                MenuItem(name="2-1") Input
-                                MenuItem(name="2-2") Option 2
+                                MenuItem(name="2-1") Input 输入框
+                                MenuItem(name="2-2") Select 选择器
+                                MenuItem(name="2-3") Radio 单选框
+                                MenuItem(name="2-4") Checkbox 多选框
+                                MenuItem(name="2-5") Switch 开关
+                                MenuItem(name="2-6") Table 表格
+                                MenuItem(name="2-7") AutoComplete 自动完成
+                                MenuItem(name="2-8") Slider 滑块
                             Submenu(name="3")
                                 template(slot="title")
                                     Icon(type="ios-analytics")
@@ -83,6 +89,28 @@
           case '2-1':
             this.$router.push({ path: 'input' })
             break
+          case '2-2':
+            this.$router.push({ path: 'select' })
+            break
+          case '2-3':
+            this.$router.push({ path: 'radio' })
+            break
+          case '2-4':
+            this.$router.push({ path: 'checkbox' })
+            break
+          case '2-5':
+            this.$router.push({ path: 'switch' })
+            break
+          case '2-6':
+            this.$router.push({ path: 'table' })
+            break
+          case '2-7':
+            this.$router.push({ path: 'auto-complete' })
+            break
+          case '2-8':
+            this.$router.push({ path: 'slider' })
+            break
+
         }
       },
     },

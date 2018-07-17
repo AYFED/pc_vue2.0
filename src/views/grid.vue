@@ -1,5 +1,8 @@
 <template lang="pug">
     div
+        h2 Grid 栅格布局
+        h5 通过基础的 24 分栏，迅速简便地创建布局
+        br
         p.ay-row-title 水平排列基础用法
         Row
             Col(span="12") col-12
@@ -189,9 +192,9 @@
     }
 
     .ay-row-title {
-        font-size: 16px;
+        font-size: 14px;
         line-height: 1.5;
-        color: #623fed;
+        color: #333;
     }
 
     .ay-row-bg {

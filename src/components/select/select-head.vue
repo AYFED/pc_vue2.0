@@ -190,7 +190,7 @@
                     return;
                 }
 
-                this.$emit('on-query-change', val);
+              this.$emit('on-query-change', val);
             },
             queryProp(query){
                 if (query !== this.query) this.query = query;

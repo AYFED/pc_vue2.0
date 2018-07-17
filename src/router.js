@@ -27,5 +27,33 @@ export default new Router({
       path: '/input',
       component: (resolve) => require(['./views/Input'], resolve),
     },
+    {
+      path: '/select',
+      component: (resolve) => require(['./views/Select'], resolve),
+    },
+    {
+      path: '/radio',
+      component: (resolve) => require(['./views/Radio'], resolve),
+    },
+    {
+      path: '/checkbox',
+      component: (resolve) => require(['./views/Checkbox'], resolve),
+    },
+    {
+      path: '/switch',
+      component: (resolve) => require(['./views/Switch'], resolve),
+    },
+    {
+      path: '/table',
+      component: (resolve) => require(['./views/Table'], resolve),
+    },
+    {
+      path: '/auto-complete',
+      component: (resolve) => require(['./views/AutoComplete'], resolve),
+    },
+    {
+      path: '/slider',
+      component: (resolve) => require(['./views/Slider'], resolve),
+    },
   ],
 })

@@ -1,7 +1,10 @@
 <template lang="pug">
     div
         div.ay-demo-layout
-            h2 基本结构
+            h2 Layout 布局容器
+            h5 用于布局的容器组件，方便快速搭建页面的基本结构
+            br
+            h3 基本结构
             Layout
                 Header Header
                 Content Content

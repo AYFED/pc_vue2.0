@@ -16,6 +16,19 @@ import ButtonGroup from './button-group';
 import Input from './input';
 import XSelect from './select';
 import XOption from './option';
+import OptionGroup from './option-group';
+import Radio from './radio';
+import RadioGroup from './radio-group';
+import Checkbox from './checkbox';
+import CheckboxGroup from './checkbox-group';
+import XSwitch from './switch';
+import XTable from './table';
+import Page from './page';
+import Tag from './tag';
+import Poptip from './poptip';
+import AutoComplete from './auto-complete';
+import Slider from './slider';
+import DatePicker from './date-picker';
 
 
 export {
@@ -37,5 +50,18 @@ export {
   ButtonGroup,
   Input,
   XSelect,
-  XOption
+  XOption,
+  OptionGroup,
+  Radio,
+  RadioGroup,
+  Checkbox,
+  CheckboxGroup,
+  XSwitch,
+  XTable,
+  Page,
+  Tag,
+  Poptip,
+  AutoComplete,
+  Slider,
+  DatePicker
 }

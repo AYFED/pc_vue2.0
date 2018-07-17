@@ -1,5 +1,8 @@
 <template lang="pug">
     div
+        h2 Icon 图标
+        h5 提供了一套常用的图标集合
+        br
         Row
             Col(span="3")
                 Icon(type="ios-ionic",size="24")

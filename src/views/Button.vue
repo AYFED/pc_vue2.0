@@ -1,102 +1,105 @@
 <template lang="pug">
     div
         .ay-button-view
-            h2 按钮类型
-            XButton Default
-            XButton(type="primary") Primary
-            XButton(type="ghost") Ghost
-            XButton(type="dashed") Dashed
-            XButton(type="text") Text
+            h2 Button 按钮
+            h5 常用的操作按钮
+            br
+            h4 按钮类型
+            XButton 默认按钮
+            XButton(type="primary") 主要按钮
+            XButton(type="ghost") 朴素按钮
+            XButton(type="dashed") 虚线按钮
+            XButton(type="text") 文字按钮
             br
             br
-            XButton(type="info") Info
-            XButton(type="success") Success
-            XButton(type="warning") Warning
-            XButton(type="error") Error
+            XButton(type="info") 信息按钮
+            XButton(type="success") 成功按钮
+            XButton(type="warning") 警告按钮
+            XButton(type="error") 危险按钮
             br
             br
             br
             br
         .ay-other-view
-            h2 图标按钮及按钮形状
+            h4 图标按钮及按钮形状
             XButton(type="primary", shape="circle", icon="ios-search")
-            XButton(type="primary", icon="ios-search") Search
-            XButton(type="primary", shape="circle", icon="ios-search") Search
-            XButton(type="primary", shape="circle") Circle
+            XButton(type="primary", icon="ios-search") 搜索
+            XButton(type="primary", shape="circle", icon="ios-search") 搜索
+            XButton(type="primary", shape="circle") 搜索
             br
             br
             XButton(type="ghost", shape="circle", icon="ios-search")
-            XButton(type="ghost", icon="ios-search") Search
-            XButton(type="ghost", shape="circle", icon="ios-search") Search
-            XButton(type="ghost", shape="circle") Circle
+            XButton(type="ghost", icon="ios-search") 搜索
+            XButton(type="ghost", shape="circle", icon="ios-search") 搜索
+            XButton(type="ghost", shape="circle") 搜索
             br
             br
             br
             br
-            h2 按钮尺寸
-            XButton(type="primary", size="large") Large
-            XButton(type="primary") Default
-            XButton(type="primary", size="small") Small
+            h4 按钮尺寸
+            XButton(type="primary", size="large") 大型按钮
+            XButton(type="primary") 默认按钮
+            XButton(type="primary", size="small") 小型按钮
             br
             br
-            XButton(type="primary", shape="circle", size="large") Large
-            XButton(type="primary", shape="circle") Default
-            XButton(type="primary", shape="circle", size="small") Small
-            br
-            br
-            br
-            br
-            h2 长按钮
-            XButton(type="success", long) SUBMIT
-            br
-            br
-            XButton(type="error", long) DELETE
+            XButton(type="primary", shape="circle", size="large") 大型按钮
+            XButton(type="primary", shape="circle") 默认按钮
+            XButton(type="primary", shape="circle", size="small") 小型按钮
             br
             br
             br
             br
-            h2 不可用状态
-            XButton Default
-            XButton(disabled) Default
+            h4 长按钮
+            XButton(type="success", long) 提交按钮
             br
-            XButton(type="primary") Primary
-            XButton(type="primary", disabled) Primary
             br
-            XButton(type="ghost") Ghost
-            XButton(type="ghost", disabled) Ghost
-            br
-            XButton(type="dashed") Dashed
-            XButton(type="dashed", disabled) Dashed
-            br
-            XButton(type="text") Text
-            XButton(type="text", disabled) Text
+            XButton(type="error", long) 删除按钮
             br
             br
             br
             br
-            h2 加载中状态
-            XButton(type="primary", loading) Loading...
+            h4 不可用状态
+            XButton 默认按钮
+            XButton(disabled) 默认按钮
+            br
+            XButton(type="primary") 主要按钮
+            XButton(type="primary", disabled) 主要按钮
+            br
+            XButton(type="ghost") 朴素按钮
+            XButton(type="ghost", disabled) 朴素按钮
+            br
+            XButton(type="dashed") 虚线按钮
+            XButton(type="dashed", disabled) 虚线按钮
+            br
+            XButton(type="text") 文字按钮
+            XButton(type="text", disabled) 文字按钮
+            br
+            br
+            br
+            br
+            h4 加载中状态
+            XButton(type="primary", loading) 加载中
             XButton(type="primary", :loading="loading", @click="toLoading")
-                span(v-if="!loading") Click me!
-                span(v-else) Loading...
+                span(v-if="!loading") 点击按钮
+                span(v-else) 加载中
             XButton(type="primary", :loading="loading2", icon="ios-arrow-back", @click="toLoading2")
-                span(v-if="!loading2") Click me!
-                span(v-else) Loading...
+                span(v-if="!loading2") 点击按钮
+                span(v-else) 加载中
             br
             br
             br
             br
-            h2 按钮组合
+            h4 按钮组合
             h4 Basic
             br
             br
             ButtonGroup
-                XButton Cancel
-                XButton(type="primary") Confirm
+                XButton 取消按钮
+                XButton(type="primary") 提交按钮
             ButtonGroup
-                XButton(disabled) Yesterday
-                XButton(disabled) Today
-                XButton(disabled) Tomorrow
+                XButton(disabled) 昨天
+                XButton(disabled) 今天
+                XButton(disabled) 明天
             ButtonGroup
                 XButton(type="primary") L
                 XButton M
@@ -104,13 +107,13 @@
                 XButton(type="dashed") XXL
             br
             br
-            h2 Icons
+            h4 Icons
             ButtonGroup
                 XButton(type="primary")
                     Icon(type="ios-arrow-back")
-                    | Backward
+                    | 上一页
                 XButton(type="primary")
-                    | Forward
+                    | 下一页
                     Icon(type="ios-arrow-forward")
             ButtonGroup
                 XButton(type="primary", icon="ios-skip-backward")
@@ -122,13 +125,13 @@
                 XButton(type="ghost", icon="ios-color-filter-outline")
             br
             br
-            h2 Circle
+            h4 Circle
             ButtonGroup(shape="circle")
                 XButton(type="primary")
                     Icon(type="ios-arrow-back")
-                    | Backward
+                    | 上一页
                 XButton(type="primary")
-                    | Forward
+                    | 下一页
                     Icon(type="ios-arrow-forward")
             ButtonGroup(shape="circle")
                 XButton(type="primary", icon="ios-skip-backward")
@@ -140,30 +143,30 @@
                 XButton(type="ghost", icon="ios-color-filter-outline")
             br
             br
-            h2 Size
+            h4 Size
             ButtonGroup(size="large")
-                XButton(type="ghost") Large
-                XButton(type="ghost") Large
+                XButton(type="ghost") 大型按钮
+                XButton(type="ghost") 大型按钮
             ButtonGroup
-                XButton(type="ghost") Default
-                XButton(type="ghost") Default
+                XButton(type="ghost") 默认按钮
+                XButton(type="ghost") 默认按钮
             ButtonGroup(size="small")
-                XButton(type="ghost") Small
-                XButton(type="ghost") Small
+                XButton(type="ghost") 小型按钮
+                XButton(type="ghost") 小型按钮
             br
             br
             ButtonGroup(size="large", shape="circle")
-                XButton(type="ghost") Large
-                XButton(type="ghost") Large
+                XButton(type="ghost") 大型按钮
+                XButton(type="ghost") 大型按钮
             ButtonGroup(shape="circle")
-                XButton(type="ghost") Default
-                XButton(type="ghost") Default
+                XButton(type="ghost") 默认按钮
+                XButton(type="ghost") 默认按钮
             ButtonGroup(size="small", shape="circle")
-                XButton(type="ghost") Small
-                XButton(type="ghost") Small
+                XButton(type="ghost") 小型按钮
+                XButton(type="ghost") 小型按钮
             br
             br
-            h2 按钮组纵向排列
+            h4 按钮组纵向排列
             ButtonGroup(vertical)
                 XButton(type="ghost",icon="logo-facebook")
                 XButton(type="ghost",icon="logo-twitter")
@@ -192,7 +195,6 @@
         this.loading = true
       },
       toLoading2 () {
-        var _this = this
         this.loading2 = true
         window.setTimeout(() => {
           this.loading2 = false
@@ -207,7 +209,7 @@
 
     .@{css-prefix}button-view {
 
-        & > h2 {
+        & > h4 {
             margin-bottom: 20px;
         }
 
@@ -219,7 +221,7 @@
     }
 
     .@{css-prefix}other-view {
-        & > h2 {
+        & > h4 {
             margin-bottom: 20px;
         }
 
