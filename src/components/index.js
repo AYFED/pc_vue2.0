@@ -29,6 +29,8 @@ import Poptip from './poptip';
 import AutoComplete from './auto-complete';
 import Slider from './slider';
 import DatePicker from './date-picker';
+import TimePicker from './time-picker';
+import Cascader from './cascader';
 
 
 export {
@@ -63,5 +65,7 @@ export {
   Poptip,
   AutoComplete,
   Slider,
-  DatePicker
+  DatePicker,
+  TimePicker,
+  Cascader
 }

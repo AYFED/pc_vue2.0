@@ -1,4 +1,4 @@
-import dateUtil from '../../utils/date';
+const dateUtil = require('fecha');
 
 export const toDate = function(date) {
     let _date = new Date(date);
@@ -29,11 +29,11 @@ export const isInRange = (time, a, b) => {
 export const formatDate = function(date, format) {
     date = toDate(date);
     if (!date) return '';
-    return dateUtil.format(date, format || 'yyyy-MM-dd');
+    return dateUtil.format(date, format || 'YYYY-MM-DD');
 };
 
 export const parseDate = function(string, format) {
-    return dateUtil.parse(string, format || 'yyyy-MM-dd');
+    return dateUtil.parse(string, format || 'YYYY-MM-DD');
 };
 
 export const getDayCountOfMonth = function(year, month) {
@@ -125,7 +125,7 @@ export const formatDateLabels = (function() {
             });
             return {
                 label: label,
-                type: component.indexOf('yy') != -1 ? 'year' : 'month'
+                type: component.indexOf('YY') != -1 ? 'year' : 'month'
             };
         });
         return {
@@ -137,14 +137,14 @@ export const formatDateLabels = (function() {
 
 // Parsers and Formaters
 export const DEFAULT_FORMATS = {
-    date: 'yyyy-MM-dd',
-    month: 'yyyy-MM',
-    year: 'yyyy',
-    datetime: 'yyyy-MM-dd HH:mm:ss',
-    time: 'HH:mm:ss',
-    timerange: 'HH:mm:ss',
-    daterange: 'yyyy-MM-dd',
-    datetimerange: 'yyyy-MM-dd HH:mm:ss'
+    date: 'YYYY-MM-DD',
+    month: 'YYYY-MM',
+    year: 'YYYY',
+    datetime: 'YYYY-MM-DD hh:mm:ss',
+    time: 'hh:mm:ss',
+    timerange: 'hh:mm:ss',
+    daterange: 'YYYY-MM-DD',
+    datetimerange: 'YYYY-MM-DD hh:mm:ss'
 };
 
 export const RANGE_SEPARATOR = ' - ';

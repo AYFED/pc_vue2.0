@@ -28,6 +28,9 @@
                                 MenuItem(name="2-6") Table 表格
                                 MenuItem(name="2-7") AutoComplete 自动完成
                                 MenuItem(name="2-8") Slider 滑块
+                                MenuItem(name="2-9") DatePicker 日期选择器
+                                MenuItem(name="2-10") TimePicker 时间选择器
+                                MenuItem(name="2-11") Cascader 级联选择
                             Submenu(name="3")
                                 template(slot="title")
                                     Icon(type="ios-analytics")
@@ -110,6 +113,15 @@
           case '2-8':
             this.$router.push({ path: 'slider' })
             break
+          case '2-9':
+            this.$router.push({ path: 'date-picker' })
+            break
+          case '2-10':
+            this.$router.push({ path: 'time-picker' })
+            break
+          case '2-11':
+            this.$router.push({ path: 'cascader' })
+            break
 
         }
       },
@@ -120,6 +132,11 @@
 
 <style lang="less">
     @import './styles/index.less';
+
+    p{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
 
     @css-prefix: ay-;
 
@@ -158,4 +175,9 @@
             text-align: center;
         }
     }
+
+    .@{css-prefix}layout.@{css-prefix}layout-has-sider > .@{css-prefix}layout-content{
+        overflow-x: initial;
+    }
+
 </style>

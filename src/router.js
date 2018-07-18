@@ -55,5 +55,17 @@ export default new Router({
       path: '/slider',
       component: (resolve) => require(['./views/Slider'], resolve),
     },
+    {
+      path: '/date-picker',
+      component: (resolve) => require(['./views/DatePicker'], resolve),
+    },
+    {
+      path: '/time-picker',
+      component: (resolve) => require(['./views/TimePicker'], resolve),
+    },
+    {
+      path: '/cascader',
+      component: (resolve) => require(['./views/Cascader'], resolve),
+    },
   ],
 })

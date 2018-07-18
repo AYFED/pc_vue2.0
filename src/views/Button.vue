@@ -4,7 +4,7 @@
             h2 Button 按钮
             h5 常用的操作按钮
             br
-            h4 按钮类型
+            p 按钮类型
             XButton 默认按钮
             XButton(type="primary") 主要按钮
             XButton(type="ghost") 朴素按钮
@@ -21,7 +21,7 @@
             br
             br
         .ay-other-view
-            h4 图标按钮及按钮形状
+            p 图标按钮及按钮形状
             XButton(type="primary", shape="circle", icon="ios-search")
             XButton(type="primary", icon="ios-search") 搜索
             XButton(type="primary", shape="circle", icon="ios-search") 搜索
@@ -36,7 +36,7 @@
             br
             br
             br
-            h4 按钮尺寸
+            p 按钮尺寸
             XButton(type="primary", size="large") 大型按钮
             XButton(type="primary") 默认按钮
             XButton(type="primary", size="small") 小型按钮
@@ -49,7 +49,7 @@
             br
             br
             br
-            h4 长按钮
+            p 长按钮
             XButton(type="success", long) 提交按钮
             br
             br
@@ -58,7 +58,7 @@
             br
             br
             br
-            h4 不可用状态
+            p 不可用状态
             XButton 默认按钮
             XButton(disabled) 默认按钮
             br
@@ -77,7 +77,7 @@
             br
             br
             br
-            h4 加载中状态
+            p 加载中状态
             XButton(type="primary", loading) 加载中
             XButton(type="primary", :loading="loading", @click="toLoading")
                 span(v-if="!loading") 点击按钮
@@ -89,8 +89,8 @@
             br
             br
             br
-            h4 按钮组合
-            h4 Basic
+            p 按钮组合
+            p Basic
             br
             br
             ButtonGroup
@@ -107,7 +107,7 @@
                 XButton(type="dashed") XXL
             br
             br
-            h4 Icons
+            p Icons
             ButtonGroup
                 XButton(type="primary")
                     Icon(type="ios-arrow-back")
@@ -125,7 +125,7 @@
                 XButton(type="ghost", icon="ios-color-filter-outline")
             br
             br
-            h4 Circle
+            p Circle
             ButtonGroup(shape="circle")
                 XButton(type="primary")
                     Icon(type="ios-arrow-back")
@@ -143,7 +143,7 @@
                 XButton(type="ghost", icon="ios-color-filter-outline")
             br
             br
-            h4 Size
+            p Size
             ButtonGroup(size="large")
                 XButton(type="ghost") 大型按钮
                 XButton(type="ghost") 大型按钮
@@ -166,7 +166,7 @@
                 XButton(type="ghost") 小型按钮
             br
             br
-            h4 按钮组纵向排列
+            p 按钮组纵向排列
             ButtonGroup(vertical)
                 XButton(type="ghost",icon="logo-facebook")
                 XButton(type="ghost",icon="logo-twitter")
@@ -209,7 +209,7 @@
 
     .@{css-prefix}button-view {
 
-        & > h4 {
+        & > p {
             margin-bottom: 20px;
         }
 
@@ -221,7 +221,7 @@
     }
 
     .@{css-prefix}other-view {
-        & > h4 {
+        & > p {
             margin-bottom: 20px;
         }
 
