@@ -67,5 +67,9 @@ export default new Router({
       path: '/cascader',
       component: (resolve) => require(['./views/Cascader'], resolve),
     },
+    {
+      path: '/transfer',
+      component: (resolve) => require(['./views/Transfer'], resolve),
+    },
   ],
 })

@@ -31,6 +31,7 @@ import Slider from './slider';
 import DatePicker from './date-picker';
 import TimePicker from './time-picker';
 import Cascader from './cascader';
+import Transfer from './transfer';
 
 
 export {
@@ -67,5 +68,6 @@ export {
   Slider,
   DatePicker,
   TimePicker,
-  Cascader
+  Cascader,
+  Transfer
 }

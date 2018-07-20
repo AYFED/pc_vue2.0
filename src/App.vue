@@ -31,6 +31,7 @@
                                 MenuItem(name="2-9") DatePicker 日期选择器
                                 MenuItem(name="2-10") TimePicker 时间选择器
                                 MenuItem(name="2-11") Cascader 级联选择
+                                MenuItem(name="2-12") Transfer 穿梭框
                             Submenu(name="3")
                                 template(slot="title")
                                     Icon(type="ios-analytics")
@@ -122,7 +123,9 @@
           case '2-11':
             this.$router.push({ path: 'cascader' })
             break
-
+          case '2-12':
+            this.$router.push({ path: 'transfer' })
+            break
         }
       },
     },

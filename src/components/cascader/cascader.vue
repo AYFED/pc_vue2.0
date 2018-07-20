@@ -225,6 +225,7 @@
                     item.display = item.display.replace(new RegExp(this.query, 'g'), `<span>${this.query}</span>`);
                     return item;
                 });
+                this.broadcast('Drop', 'on-update-popper')
                 return selections;
             }
         },
