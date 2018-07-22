@@ -5,6 +5,11 @@ import store from './store'
 
 Vue.config.productionTip = false
 
+import Notice from './components/notice';
+import Message from './components/message';
+
+Vue.prototype.$Notice = Notice;
+Vue.prototype.$Message = Message;
 
 new Vue({
   router,

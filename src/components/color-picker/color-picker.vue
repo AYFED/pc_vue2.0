@@ -83,7 +83,7 @@
                         </div>
                         <div :class="[prefixCls + '-confirm']">
                             <span :class="[prefixCls + '-confirm-color']">{{formatColor}}</span>
-                            <i-button
+                            <XButton
                                 ref="clear"
                                 :tabindex="0"
                                 size="small"
@@ -91,8 +91,8 @@
                                 @click.native="handleClear"
                                 @keydown.enter="handleClear"
                                 @keydown.native.esc="closer"
-                            >{{t('i.datepicker.clear')}}</i-button>
-                            <i-button
+                            >{{t('i.datepicker.clear')}}</XButton>
+                            <XButton
                                 ref="ok"
                                 :tabindex="0"
                                 size="small"
@@ -101,7 +101,7 @@
                                 @keydown.native.tab="handleLastTab"
                                 @keydown.enter="handleSuccess"
                                 @keydown.native.esc="closer"
-                            >{{t('i.datepicker.ok')}}</i-button>
+                            >{{t('i.datepicker.ok')}}</XButton>
                         </div>
                     </div>
                 </transition>
@@ -115,6 +115,7 @@ import tinycolor from 'tinycolor2';
 import {directive as clickOutside} from 'v-click-outside-x';
 import TransferDom from '../../directives/transfer-dom';
 import Drop from '../../components/select/dropdown.vue';
+import XButton from '../../components/button'
 import RecommendColors from './recommend-colors.vue';
 import Saturation from './saturation.vue';
 import Hue from './hue.vue';
@@ -128,7 +129,7 @@ import {changeColor, toRGBAString} from './utils';
 export default {
     name: 'ColorPicker',
 
-    components: {Drop, RecommendColors, Saturation, Hue, Alpha},
+    components: {Drop, RecommendColors, Saturation, Hue, Alpha, XButton},
 
     directives: {clickOutside, TransferDom},
 

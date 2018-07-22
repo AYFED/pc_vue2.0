@@ -32,7 +32,15 @@ import DatePicker from './date-picker';
 import TimePicker from './time-picker';
 import Cascader from './cascader';
 import Transfer from './transfer';
-
+import InputNumber from './input-number';
+import Rate from './rate';
+import Upload from './upload';
+import Progress from './progress';
+import Modal from './modal';
+import ColorPicker from './color-picker';
+import Form from './form';
+import FormItem from './form-item';
+import Alert from './alert';
 
 export {
   Row,
@@ -69,5 +77,14 @@ export {
   DatePicker,
   TimePicker,
   Cascader,
-  Transfer
+  Transfer,
+  InputNumber,
+  Rate,
+  Upload,
+  Progress,
+  Modal,
+  ColorPicker,
+  Form,
+  FormItem,
+  Alert
 }

@@ -71,5 +71,29 @@ export default new Router({
       path: '/transfer',
       component: (resolve) => require(['./views/Transfer'], resolve),
     },
+    {
+      path: '/input-number',
+      component: (resolve) => require(['./views/InputNumber'], resolve),
+    },
+    {
+      path: '/rate',
+      component: (resolve) => require(['./views/Rate'], resolve),
+    },
+    {
+      path: '/upload',
+      component: (resolve) => require(['./views/Upload'], resolve),
+    },
+    {
+      path: '/color-picker',
+      component: (resolve) => require(['./views/ColorPicker'], resolve),
+    },
+    {
+      path: '/form',
+      component: (resolve) => require(['./views/Form'], resolve),
+    },
+    {
+      path: '/alert',
+      component: (resolve) => require(['./views/Alert'], resolve),
+    },
   ],
 })

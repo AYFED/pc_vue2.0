@@ -32,11 +32,16 @@
                                 MenuItem(name="2-10") TimePicker 时间选择器
                                 MenuItem(name="2-11") Cascader 级联选择
                                 MenuItem(name="2-12") Transfer 穿梭框
+                                MenuItem(name="2-13") InputNumber 数字输入框
+                                MenuItem(name="2-14") Rate 评分
+                                MenuItem(name="2-15") Upload 上传
+                                MenuItem(name="2-16") ColorPicker 颜色选择器
+                                MenuItem(name="2-17") Form 表单
                             Submenu(name="3")
                                 template(slot="title")
                                     Icon(type="ios-analytics")
-                                    | Item 3
-                                MenuItem(name="3-1") Option 1
+                                    | View
+                                MenuItem(name="3-1") Alert 警告提示
                                 MenuItem(name="3-2") Option 2
                     Content(:style="{padding: '24px', minHeight: '280px', background: '#fff'}")
                         <router-view/>
@@ -126,6 +131,27 @@
           case '2-12':
             this.$router.push({ path: 'transfer' })
             break
+          case '2-13':
+            this.$router.push({ path: 'input-number' })
+            break
+          case '2-14':
+            this.$router.push({ path: 'rate' })
+            break
+          case '2-15':
+            this.$router.push({ path: 'upload' })
+            break
+          case '2-16':
+            this.$router.push({ path: 'color-picker' })
+            break
+          case '2-17':
+            this.$router.push({ path: 'form' })
+            break
+          case '3-1':
+            this.$router.push({ path: 'alert' })
+            break
+
+
+
         }
       },
     },
