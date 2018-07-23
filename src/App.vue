@@ -42,7 +42,10 @@
                                     Icon(type="ios-analytics")
                                     | View
                                 MenuItem(name="3-1") Alert 警告提示
-                                MenuItem(name="3-2") Option 2
+                                MenuItem(name="3-2") Card 卡片
+                                MenuItem(name="3-3") Message 消息提示
+                                MenuItem(name="3-4") Notification 通知
+                                MenuItem(name="3-5") Modal 对话框
                     Content(:style="{padding: '24px', minHeight: '280px', background: '#fff'}")
                         <router-view/>
                 Footer.layout-footer-center 2011-2016 &copy; Aoyou
@@ -149,9 +152,18 @@
           case '3-1':
             this.$router.push({ path: 'alert' })
             break
-
-
-
+          case '3-2':
+            this.$router.push({ path: 'card' })
+            break
+          case '3-3':
+            this.$router.push({ path: 'message' })
+            break
+          case '3-4':
+            this.$router.push({ path: 'notification' })
+            break
+          case '3-5':
+            this.$router.push({ path: 'modal' })
+            break
         }
       },
     },

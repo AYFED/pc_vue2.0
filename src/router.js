@@ -95,5 +95,21 @@ export default new Router({
       path: '/alert',
       component: (resolve) => require(['./views/Alert'], resolve),
     },
+    {
+      path: '/card',
+      component: (resolve) => require(['./views/Card'], resolve),
+    },
+    {
+      path: '/message',
+      component: (resolve) => require(['./views/Message'], resolve),
+    },
+    {
+      path: '/notification',
+      component: (resolve) => require(['./views/Notification'], resolve),
+    },
+    {
+      path: '/modal',
+      component: (resolve) => require(['./views/Modal'], resolve),
+    },
   ],
 })

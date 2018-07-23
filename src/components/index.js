@@ -86,5 +86,5 @@ export {
   ColorPicker,
   Form,
   FormItem,
-  Alert
+  Alert,
 }
