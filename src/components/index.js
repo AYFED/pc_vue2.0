@@ -41,6 +41,15 @@ import ColorPicker from './color-picker';
 import Form from './form';
 import FormItem from './form-item';
 import Alert from './alert';
+import Avatar from './avatar';
+import Badge from './badge';
+import Collapse from './collapse';
+import Panel from './panel';
+import Timeline from './timeline';
+import TimelineItem from './timeline-item';
+import Tooltip from './tooltip';
+import Carousel from './carousel';
+import CarouselItem from './carousel-item';
 
 export {
   Row,
@@ -87,4 +96,13 @@ export {
   Form,
   FormItem,
   Alert,
+  Avatar,
+  Badge,
+  Collapse,
+  Panel,
+  Timeline,
+  TimelineItem,
+  Tooltip,
+  Carousel,
+  CarouselItem
 }

@@ -111,5 +111,42 @@ export default new Router({
       path: '/modal',
       component: (resolve) => require(['./views/Modal'], resolve),
     },
+    {
+      path: '/progress',
+      component: (resolve) => require(['./views/Progress'], resolve),
+    },
+    {
+      path: '/avatar',
+      component: (resolve) => require(['./views/Avatar'], resolve),
+    },
+    {
+      path: '/badge',
+      component: (resolve) => require(['./views/Badge'], resolve),
+    },
+    {
+      path: '/collapse',
+      component: (resolve) => require(['./views/Collapse'], resolve),
+    },
+    {
+      path: '/timeline',
+      component: (resolve) => require(['./views/Timeline'], resolve),
+    },
+    {
+      path: '/tag',
+      component: (resolve) => require(['./views/Tag'], resolve),
+    },
+    {
+      path: '/tooltip',
+      component: (resolve) => require(['./views/Tooltip'], resolve),
+    },
+    {
+      path: '/poptip',
+      component: (resolve) => require(['./views/Poptip'], resolve),
+    },
+    {
+      path: '/carousel',
+      component: (resolve) => require(['./views/Carousel'], resolve),
+    },
+
   ],
 })

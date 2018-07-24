@@ -46,6 +46,15 @@
                                 MenuItem(name="3-3") Message 消息提示
                                 MenuItem(name="3-4") Notification 通知
                                 MenuItem(name="3-5") Modal 对话框
+                                MenuItem(name="3-6") Progress 进度条
+                                MenuItem(name="3-7") Avatar 头像
+                                MenuItem(name="3-8") Badge 标记
+                                MenuItem(name="3-9") Collapse 折叠面板
+                                MenuItem(name="3-10") Timeline 时间轴
+                                MenuItem(name="3-11") Tag 标签
+                                MenuItem(name="3-12") Tooltip 文字提示
+                                MenuItem(name="3-13") Poptip 气泡提示
+                                MenuItem(name="3-14") Carousel 走马灯
                     Content(:style="{padding: '24px', minHeight: '280px', background: '#fff'}")
                         <router-view/>
                 Footer.layout-footer-center 2011-2016 &copy; Aoyou
@@ -164,6 +173,34 @@
           case '3-5':
             this.$router.push({ path: 'modal' })
             break
+          case '3-6':
+            this.$router.push({ path: 'progress' })
+            break
+          case '3-7':
+            this.$router.push({ path: 'avatar' })
+            break
+          case '3-8':
+            this.$router.push({ path: 'badge' })
+            break
+          case '3-9':
+            this.$router.push({ path: 'collapse' })
+            break
+          case '3-10':
+            this.$router.push({ path: 'timeline' })
+            break
+          case '3-11':
+            this.$router.push({ path: 'tag' })
+            break
+          case '3-12':
+            this.$router.push({ path: 'tooltip' })
+            break
+          case '3-13':
+            this.$router.push({ path: 'poptip' })
+            break
+          case '3-14':
+            this.$router.push({ path: 'carousel' })
+            break
+
         }
       },
     },
