@@ -51,6 +51,7 @@ import Tooltip from './tooltip';
 import Carousel from './carousel';
 import CarouselItem from './carousel-item';
 import Tree from './tree';
+import MenuGroup from './menu-group';
 
 export {
   Row,
@@ -106,5 +107,6 @@ export {
   Tooltip,
   Carousel,
   CarouselItem,
-  Tree
+  Tree,
+  MenuGroup
 }

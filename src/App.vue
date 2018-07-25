@@ -56,9 +56,15 @@
                                 MenuItem(name="3-13") Poptip 气泡提示
                                 MenuItem(name="3-14") Carousel 走马灯
                                 MenuItem(name="3-15") Tree 树形控件
+                            Submenu(name="4")
+                                template(slot="title")
+                                    Icon(type="ios-apps")
+                                    | Navigation
+                                MenuItem(name="4-1") NavMenu 导航菜单
+
                     Content(:style="{padding: '24px', minHeight: '280px', background: '#fff'}")
                         <router-view/>
-                Footer.layout-footer-center 2011-2016 &copy; Aoyou
+                Footer.layout-footer-center 2016-2018 &copy; Aoyou
 </template>
 
 <script>
@@ -94,118 +100,119 @@
       Submenu,
     },
     methods: {
-      changeMenu (active) {
+      changeMenu(active) {
         switch (active) {
           case '1-1':
-            this.$router.push({ path: 'grid' })
+            this.$router.push({path: 'grid'})
             break
           case '1-2':
-            this.$router.push({ path: 'layout' })
+            this.$router.push({path: 'layout'})
             break
           case '1-3':
-            this.$router.push({ path: 'button' })
+            this.$router.push({path: 'button'})
             break
           case '1-4':
-            this.$router.push({ path: 'icon' })
+            this.$router.push({path: 'icon'})
             break
           case '2-1':
-            this.$router.push({ path: 'input' })
+            this.$router.push({path: 'input'})
             break
           case '2-2':
-            this.$router.push({ path: 'select' })
+            this.$router.push({path: 'select'})
             break
           case '2-3':
-            this.$router.push({ path: 'radio' })
+            this.$router.push({path: 'radio'})
             break
           case '2-4':
-            this.$router.push({ path: 'checkbox' })
+            this.$router.push({path: 'checkbox'})
             break
           case '2-5':
-            this.$router.push({ path: 'switch' })
+            this.$router.push({path: 'switch'})
             break
           case '2-6':
-            this.$router.push({ path: 'table' })
+            this.$router.push({path: 'table'})
             break
           case '2-7':
-            this.$router.push({ path: 'auto-complete' })
+            this.$router.push({path: 'auto-complete'})
             break
           case '2-8':
-            this.$router.push({ path: 'slider' })
+            this.$router.push({path: 'slider'})
             break
           case '2-9':
-            this.$router.push({ path: 'date-picker' })
+            this.$router.push({path: 'date-picker'})
             break
           case '2-10':
-            this.$router.push({ path: 'time-picker' })
+            this.$router.push({path: 'time-picker'})
             break
           case '2-11':
-            this.$router.push({ path: 'cascader' })
+            this.$router.push({path: 'cascader'})
             break
           case '2-12':
-            this.$router.push({ path: 'transfer' })
+            this.$router.push({path: 'transfer'})
             break
           case '2-13':
-            this.$router.push({ path: 'input-number' })
+            this.$router.push({path: 'input-number'})
             break
           case '2-14':
-            this.$router.push({ path: 'rate' })
+            this.$router.push({path: 'rate'})
             break
           case '2-15':
-            this.$router.push({ path: 'upload' })
+            this.$router.push({path: 'upload'})
             break
           case '2-16':
-            this.$router.push({ path: 'color-picker' })
+            this.$router.push({path: 'color-picker'})
             break
           case '2-17':
-            this.$router.push({ path: 'form' })
+            this.$router.push({path: 'form'})
             break
           case '3-1':
-            this.$router.push({ path: 'alert' })
+            this.$router.push({path: 'alert'})
             break
           case '3-2':
-            this.$router.push({ path: 'card' })
+            this.$router.push({path: 'card'})
             break
           case '3-3':
-            this.$router.push({ path: 'message' })
+            this.$router.push({path: 'message'})
             break
           case '3-4':
-            this.$router.push({ path: 'notification' })
+            this.$router.push({path: 'notification'})
             break
           case '3-5':
-            this.$router.push({ path: 'modal' })
+            this.$router.push({path: 'modal'})
             break
           case '3-6':
-            this.$router.push({ path: 'progress' })
+            this.$router.push({path: 'progress'})
             break
           case '3-7':
-            this.$router.push({ path: 'avatar' })
+            this.$router.push({path: 'avatar'})
             break
           case '3-8':
-            this.$router.push({ path: 'badge' })
+            this.$router.push({path: 'badge'})
             break
           case '3-9':
-            this.$router.push({ path: 'collapse' })
+            this.$router.push({path: 'collapse'})
             break
           case '3-10':
-            this.$router.push({ path: 'timeline' })
+            this.$router.push({path: 'timeline'})
             break
           case '3-11':
-            this.$router.push({ path: 'tag' })
+            this.$router.push({path: 'tag'})
             break
           case '3-12':
-            this.$router.push({ path: 'tooltip' })
+            this.$router.push({path: 'tooltip'})
             break
           case '3-13':
-            this.$router.push({ path: 'poptip' })
+            this.$router.push({path: 'poptip'})
             break
           case '3-14':
-            this.$router.push({ path: 'carousel' })
+            this.$router.push({path: 'carousel'})
             break
           case '3-15':
-            this.$router.push({ path: 'tree' })
+            this.$router.push({path: 'tree'})
             break
-
-
+          case '4-1':
+            this.$router.push({path: 'menu'})
+            break
 
 
         }
@@ -218,7 +225,7 @@
 <style lang="less">
     @import './styles/index.less';
 
-    p{
+    p {
         font-size: 14px;
         margin-bottom: 10px;
     }
@@ -261,7 +268,7 @@
         }
     }
 
-    .@{css-prefix}layout.@{css-prefix}layout-has-sider > .@{css-prefix}layout-content{
+    .@{css-prefix}layout.@{css-prefix}layout-has-sider > .@{css-prefix}layout-content {
         overflow-x: initial;
     }
 

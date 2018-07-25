@@ -151,5 +151,10 @@ export default new Router({
       path: '/tree',
       component: (resolve) => require(['./views/Tree'], resolve),
     },
+    {
+      path: '/menu',
+      component: (resolve) => require(['./views/Menu'], resolve),
+    },
+
   ],
 })
