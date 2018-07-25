@@ -36,11 +36,11 @@
             Col(span="8")
                 Form(:model="setting", :label-width="100")
                     FormItem(label="自动切换")
-                        Switch(v-model="setting.autoplay")
+                        XSwitch(v-model="setting.autoplay")
                             span(slot="open") 开
                             span(slot="close") 关
                     FormItem(label="圆形指示器")
-                        Switch(v-model="setting.radiusDot")
+                        XSwitch(v-model="setting.radiusDot")
                             span(slot="open") 开
                             span(slot="close") 关
                     FormItem(label="自动切换速度")
@@ -73,7 +73,7 @@
 </template>
 
 <script>
-  import { Carousel, CarouselItem, XButton, Input, Row, Col, Form, FormItem, Switch, Slider, RadioGroup, Radio  } from '@/components'
+  import { Carousel, CarouselItem, XButton, Input, Row, Col, Form, FormItem, XSwitch, Slider, RadioGroup, Radio  } from '@/components'
 
   export default {
     components: {
@@ -85,7 +85,7 @@
       Col,
       Form,
       FormItem,
-      Switch,
+      XSwitch,
       Slider,
       RadioGroup,
       Radio

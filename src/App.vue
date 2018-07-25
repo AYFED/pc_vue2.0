@@ -55,6 +55,7 @@
                                 MenuItem(name="3-12") Tooltip 文字提示
                                 MenuItem(name="3-13") Poptip 气泡提示
                                 MenuItem(name="3-14") Carousel 走马灯
+                                MenuItem(name="3-15") Tree 树形控件
                     Content(:style="{padding: '24px', minHeight: '280px', background: '#fff'}")
                         <router-view/>
                 Footer.layout-footer-center 2011-2016 &copy; Aoyou
@@ -200,6 +201,12 @@
           case '3-14':
             this.$router.push({ path: 'carousel' })
             break
+          case '3-15':
+            this.$router.push({ path: 'tree' })
+            break
+
+
+
 
         }
       },

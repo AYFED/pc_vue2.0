@@ -50,6 +50,7 @@ import TimelineItem from './timeline-item';
 import Tooltip from './tooltip';
 import Carousel from './carousel';
 import CarouselItem from './carousel-item';
+import Tree from './tree';
 
 export {
   Row,
@@ -104,5 +105,6 @@ export {
   TimelineItem,
   Tooltip,
   Carousel,
-  CarouselItem
+  CarouselItem,
+  Tree
 }

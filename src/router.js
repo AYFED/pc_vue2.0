@@ -147,6 +147,9 @@ export default new Router({
       path: '/carousel',
       component: (resolve) => require(['./views/Carousel'], resolve),
     },
-
+    {
+      path: '/tree',
+      component: (resolve) => require(['./views/Tree'], resolve),
+    },
   ],
 })
