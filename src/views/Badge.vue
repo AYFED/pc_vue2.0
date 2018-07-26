@@ -31,8 +31,6 @@
         Badge(:count="10")
         span(style="margin-right:20px;")
         Badge(:count="10", class-name="demo-badge-alone")
-
-
 </template>
 
 <script>

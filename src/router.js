@@ -155,6 +155,50 @@ export default new Router({
       path: '/menu',
       component: (resolve) => require(['./views/Menu'], resolve),
     },
+    {
+      path: '/tabs',
+      component: (resolve) => require(['./views/Tabs'], resolve),
+    },
+    {
+      path: '/dropdown',
+      component: (resolve) => require(['./views/Dropdown'], resolve),
+    },
+    {
+      path: '/page',
+      component: (resolve) => require(['./views/Page'], resolve),
+    },
+    {
+      path: '/breadcrumb',
+      component: (resolve) => require(['./views/Breadcrumb'], resolve),
+    },
+    {
+      path: '/steps',
+      component: (resolve) => require(['./views/Steps'], resolve),
+    },
+    {
+      path: '/loading-bar',
+      component: (resolve) => require(['./views/LoadingBar'], resolve),
+    },
+    {
+      path: '/circle',
+      component: (resolve) => require(['./views/Circle'], resolve),
+    },
+    {
+      path: '/affix',
+      component: (resolve) => require(['./views/Affix'], resolve),
+    },
+    {
+      path: '/back-top',
+      component: (resolve) => require(['./views/BackTop'], resolve),
+    },
+    {
+      path: '/spin',
+      component: (resolve) => require(['./views/Spin'], resolve),
+    },
+    {
+      path: '/scroll',
+      component: (resolve) => require(['./views/Scroll'], resolve),
+    },
 
   ],
 })

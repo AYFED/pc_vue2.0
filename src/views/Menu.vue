@@ -165,10 +165,11 @@
                 MenuItem(name="4")
                     Icon(type="ios-broken")
                     | 流失用户
-
-
-
-
+        br
+        p 切换主题
+        RadioGroup(v-model="theme3")
+            Radio(label="light")
+            Radio(label="dark")
 </template>
 
 <script>

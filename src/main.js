@@ -8,10 +8,12 @@ Vue.config.productionTip = false
 import Notice from './components/notice';
 import Message from './components/message';
 import Modal from './components/modal';
+import LoadingBar from './components/loading-bar';
 
 Vue.prototype.$Notice = Notice;
 Vue.prototype.$Message = Message;
 Vue.prototype.$Modal = Modal;
+Vue.prototype.$Loading = LoadingBar;
 
 new Vue({
   router,

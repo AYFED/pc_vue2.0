@@ -11,28 +11,34 @@
 </template>
 
 <script>
-const prefixCls = 'ay-scroll';
+  const prefixCls = 'ay-scroll'
 
-export default {
+  import { Icon, Spin } from '@/components'
+
+  export default {
     props: ['text', 'active', 'spinnerHeight'],
+    components: {
+      Icon,
+      Spin
+    },
     computed: {
-        wrapperClasses() {
-            return [
-                `${prefixCls}-loader-wrapper`,
-                {
-                    [`${prefixCls}-loader-wrapper-active`]: this.active
-                }
-            ];
-        },
-        spinnerClasses() {
-            return `${prefixCls}-spinner`;
-        },
-        iconClasses() {
-            return `${prefixCls}-spinner-icon`;
-        },
-        textClasses() {
-            return `${prefixCls}-loader-text`;
-        }
-    }
-};
+      wrapperClasses () {
+        return [
+          `${prefixCls}-loader-wrapper`,
+          {
+            [`${prefixCls}-loader-wrapper-active`]: this.active,
+          },
+        ]
+      },
+      spinnerClasses () {
+        return `${prefixCls}-spinner`
+      },
+      iconClasses () {
+        return `${prefixCls}-spinner-icon`
+      },
+      textClasses () {
+        return `${prefixCls}-loader-text`
+      },
+    },
+  }
 </script>

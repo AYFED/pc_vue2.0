@@ -61,6 +61,25 @@
                                     Icon(type="ios-apps")
                                     | Navigation
                                 MenuItem(name="4-1") NavMenu 导航菜单
+                                MenuItem(name="4-2") Tabs 标签页
+                                MenuItem(name="4-3") Dropdown 下拉菜单
+                                MenuItem(name="4-4") Page 分页
+                                MenuItem(name="4-5") Breadcrumb 面包屑
+                                MenuItem(name="4-6") Steps 步骤条
+                                MenuItem(name="4-7") LoadingBar 加载进度条
+                            Submenu(name="5")
+                                template(slot="title")
+                                    Icon(type="ios-happy")
+                                    | Chart
+                                MenuItem(name="5-1") Circle 进度环
+                            Submenu(name="6")
+                                template(slot="title")
+                                    Icon(type="ios-medal")
+                                    | Other
+                                MenuItem(name="6-1") Affix 图钉
+                                MenuItem(name="6-2") BackTop 返回顶部
+                                MenuItem(name="6-3") Spin 加载中
+                                MenuItem(name="6-4") Scroll 无限滚动
 
                     Content(:style="{padding: '24px', minHeight: '280px', background: '#fff'}")
                         <router-view/>
@@ -213,8 +232,39 @@
           case '4-1':
             this.$router.push({path: 'menu'})
             break
-
-
+          case '4-2':
+            this.$router.push({path: 'tabs'})
+            break
+          case '4-3':
+            this.$router.push({path: 'dropdown'})
+            break
+          case '4-4':
+            this.$router.push({path: 'page'})
+            break
+          case '4-5':
+            this.$router.push({path: 'breadcrumb'})
+            break
+          case '4-6':
+            this.$router.push({path: 'steps'})
+            break
+          case '4-7':
+            this.$router.push({path: 'loading-bar'})
+            break
+          case '5-1':
+            this.$router.push({path: 'circle'})
+            break
+          case '6-1':
+            this.$router.push({path: 'affix'})
+            break
+          case '6-2':
+            this.$router.push({path: 'back-top'})
+            break
+          case '6-3':
+            this.$router.push({path: 'spin'})
+            break
+          case '6-4':
+            this.$router.push({path: 'scroll'})
+            break
         }
       },
     },

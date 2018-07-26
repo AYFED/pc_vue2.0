@@ -11,6 +11,7 @@
         br
         p 提醒类型
         h5(style="margin-bottom: 10px;") 带描述信息
+        br
         XButton(@click="info(false)") 消息
         span(style="margin-right: 10px;")
         XButton(@click="success(false)") 成功
@@ -18,7 +19,10 @@
         XButton(@click="warning(false)") 警告
         span(style="margin-right: 10px;")
         XButton(@click="error(false)") 错误
+        br
+        br
         h5(style="margin-bottom: 10px;") 仅标题
+        br
         XButton(@click="info(true)") 消息
         span(style="margin-right: 10px;")
         XButton(@click="success(true)") 成功

@@ -52,6 +52,18 @@ import Carousel from './carousel';
 import CarouselItem from './carousel-item';
 import Tree from './tree';
 import MenuGroup from './menu-group';
+import Tabs from './tabs';
+import TabPane from './tab-pane';
+import Dropdown from './dropdown';
+import DropdownMenu from './dropdown-menu';
+import DropdownItem from './dropdown-item';
+import Steps from './steps';
+import Step from './step';
+import XCircle from './circle';
+import Affix from './affix';
+import BackTop from './back-top';
+import Spin from './spin';
+import Scroll from './scroll';
 
 export {
   Row,
@@ -108,5 +120,17 @@ export {
   Carousel,
   CarouselItem,
   Tree,
-  MenuGroup
+  MenuGroup,
+  Tabs,
+  TabPane,
+  Dropdown,
+  DropdownMenu,
+  DropdownItem,
+  Steps,
+  Step,
+  XCircle,
+  Affix,
+  BackTop,
+  Spin,
+  Scroll
 }
