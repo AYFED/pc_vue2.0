@@ -9,7 +9,7 @@
                         img.img-logo(src='http://pic2.aoyou.com/logo/2018/main-logo2x.png')
                     h2() 一套基于 Vue.js 的高质量 UI 组件库
                     .list()
-                        a(, href='') 指南
+                        router-link(to="vdesign") 指南
                         a(, href='') 组件
                         a(, href='') 实践
                         a(, href='') 概览
