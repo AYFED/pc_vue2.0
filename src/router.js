@@ -8,6 +8,10 @@ export default new Router({
   mode: 'history',
   routes: [
     {
+      path: '/',
+      component: (resolve) => require(['./views/Home'], resolve),
+    },
+    {
       path: '/grid',
       component: (resolve) => require(['./views/Grid'], resolve),
     },
