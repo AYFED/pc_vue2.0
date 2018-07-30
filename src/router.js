@@ -8,6 +8,14 @@ export default new Router({
   mode: 'history',
   routes: [
     {
+      path: '/',
+      component: (resolve) => require(['./views/Home'], resolve),
+    },
+    {
+      path: '/vdesign',
+      component: (resolve) => require(['./views/Vdesign'], resolve),
+    },
+    {
       path: '/grid',
       component: (resolve) => require(['./views/Grid'], resolve),
     },
